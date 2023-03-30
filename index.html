@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Bootsrap link-->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <!-- Font Awesome Link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- My css -->
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="bg"></div>
+    <section class="container m-auto section">
+      <h1 class="text-center">Where is Johan</h1>
+      <p class="text-center">
+        Johan hid in the train. There are 10 wagons on this train. Which wagon do you think Johan is
+        in?
+      </p>
+      <div class="form-group d-flex justify-content-center">
+        <input
+          type="number"
+          placeholder="Guess a number..."
+          class="form-control mr-2 w-50"
+          id="guess-input"
+        />
+        <button type="submit" id="guess-btn" class="form-control btn btn-primary w-25">
+          Check it
+        </button>
+      </div>
+      <div>
+        <h4 class="text-center text-secondary">Your Prediction Result</h4>
+        <p class="message text-center"><i class="fas fa-hourglass-half text-warning"></i></p>
+      </div>
+      <div class="refresh">
+        <button class="d-none" onclick="window.location.reload(false)">Refresh Page</button>
+      </div>
+    </section>
+    <script src="./app.js"></script>
+  </body>
+</html>
